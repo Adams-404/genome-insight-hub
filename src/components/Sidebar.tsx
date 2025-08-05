@@ -104,15 +104,15 @@ export const Sidebar = () => {
   const getNavClass = (path: string) => {
     const active = isActive(path);
     return active 
-      ? "bg-primary text-primary-foreground font-medium shadow-button" 
-      : "hover:bg-accent hover:text-accent-foreground";
+      ? "bg-primary/10 text-primary border-l-4 border-primary font-medium hover:bg-primary/15" 
+      : "hover:bg-accent/50 hover:text-foreground border-l-4 border-transparent";
   };
 
   return (
-    <SidebarPrimitive className={collapsed ? "w-16" : "w-72"}>
-      <SidebarContent className="bg-card border-r border-border">
+    <SidebarPrimitive className={`${collapsed ? "w-16" : "w-64"} transition-all duration-300 ease-in-out`}>
+      <SidebarContent className="bg-card/95 backdrop-blur-sm border-r border-border/30 shadow-lg">
         <SidebarGroup>
-          <SidebarGroupLabel className="text-sm font-semibold text-muted-foreground px-4 py-2">
+          <SidebarGroupLabel className="text-xs font-semibold text-muted-foreground/80 px-4 py-2.5 uppercase tracking-wider">
             Main Navigation
           </SidebarGroupLabel>
           <SidebarGroupContent>
@@ -122,13 +122,15 @@ export const Sidebar = () => {
                   <SidebarMenuButton asChild>
                     <NavLink 
                       to={item.url} 
-                      className={`${getNavClass(item.url)} transition-all duration-200 rounded-lg p-3 flex items-center gap-3`}
+                      className={`${getNavClass(item.url)} transition-all duration-200 rounded-r-lg p-3 flex items-center gap-3 group`}
                     >
-                      <item.icon className="h-5 w-5 flex-shrink-0" />
+                      <div className={`p-1.5 rounded-lg transition-colors duration-200 ${isActive(item.url) ? 'bg-primary/10' : 'bg-accent/30 group-hover:bg-accent/50'}`}>
+                        <item.icon className="h-4 w-4 flex-shrink-0" />
+                      </div>
                       {!collapsed && (
                         <div className="flex-1 min-w-0">
                           <div className="font-medium text-sm">{item.title}</div>
-                          <div className="text-xs opacity-70 truncate">{item.description}</div>
+                          <div className="text-xs text-muted-foreground/80 truncate">{item.description}</div>
                         </div>
                       )}
                     </NavLink>
@@ -140,7 +142,7 @@ export const Sidebar = () => {
         </SidebarGroup>
 
         <SidebarGroup>
-          <SidebarGroupLabel className="text-sm font-semibold text-muted-foreground px-4 py-2">
+          <SidebarGroupLabel className="text-xs font-semibold text-muted-foreground/80 px-4 py-2.5 uppercase tracking-wider">
             Tools & Reports
           </SidebarGroupLabel>
           <SidebarGroupContent>
@@ -150,14 +152,16 @@ export const Sidebar = () => {
                   <SidebarMenuButton asChild>
                     <NavLink 
                       to={item.url} 
-                      className={`${getNavClass(item.url)} transition-all duration-200 rounded-lg p-3 flex items-center gap-3`}
+                      className={`${getNavClass(item.url)} transition-all duration-200 rounded-r-lg p-3 flex items-center gap-3 group`}
                     >
-                      <item.icon className="h-5 w-5 flex-shrink-0" />
+                      <div className={`p-1.5 rounded-lg transition-colors duration-200 ${isActive(item.url) ? 'bg-primary/10' : 'bg-accent/30 group-hover:bg-accent/50'}`}>
+                        <item.icon className="h-4 w-4 flex-shrink-0" />
+                      </div>
                       {!collapsed && (
                         <div className="flex-1 flex items-center justify-between">
                           <span className="font-medium text-sm">{item.title}</span>
                           {item.badge && (
-                            <Badge variant="secondary" className="text-xs">
+                            <Badge variant="outline" className="text-xs bg-primary/10 text-primary border-primary/20">
                               {item.badge}
                             </Badge>
                           )}
@@ -172,7 +176,7 @@ export const Sidebar = () => {
         </SidebarGroup>
 
         <SidebarGroup>
-          <SidebarGroupLabel className="text-sm font-semibold text-muted-foreground px-4 py-2">
+          <SidebarGroupLabel className="text-xs font-semibold text-muted-foreground/80 px-4 py-2.5 uppercase tracking-wider">
             Support
           </SidebarGroupLabel>
           <SidebarGroupContent>
