@@ -18,7 +18,7 @@ const LayoutContent = () => {
       
       <div className="flex flex-1 pt-16">
         {/* Sidebar - Only on desktop */}
-        <aside className={`hidden md:block fixed top-16 bottom-0 ${isCollapsed ? 'w-16' : 'w-64'} border-r border-border bg-background transition-all duration-300 z-50`}>
+        <aside className={`hidden md:block fixed top-16 bottom-0 ${isCollapsed ? 'w-16' : 'w-64'} border-r border-border bg-background transition-all duration-300 z-50 overflow-visible`}>
           <Sidebar />
         </aside>
         
