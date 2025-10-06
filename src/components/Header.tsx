@@ -26,9 +26,11 @@ export const Header = ({ isCollapsed = false }: HeaderProps) => {
         <div className="flex items-center gap-4">
           {!isMobile && <SidebarTrigger />}
           <div className="flex items-center gap-3">
-            <div className="w-8 h-8 bg-gradient-primary rounded-lg flex items-center justify-center">
-              <span className="text-white font-bold text-sm">G</span>
-            </div>
+            <img 
+              src="/logo.png" 
+              alt="GenomeX Logo" 
+              className="h-28 w-auto object-contain"
+            />
             {!isMobile && !isCollapsed && (
               <div className="transition-opacity duration-300">
                 <h1 className="text-lg font-semibold text-foreground">GenomeX</h1>
