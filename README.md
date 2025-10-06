@@ -1,73 +1,74 @@
-# Welcome to your Lovable project
+# Genome Insight Hub
 
-## Project info
+A modern, responsive web application for genomic sequence analysis and visualization. The Genome Insight Hub provides researchers and bioinformaticians with powerful tools to analyze, compare, and visualize genomic data with an intuitive interface.
 
-**URL**: https://lovable.dev/projects/49b90b6d-33cf-4a7d-876c-15ab3e20fce7
+## 🌟 Features
 
-## How can I edit this code?
+- **Sequence Analysis**: Upload and analyze genomic sequences with comprehensive reporting
+- **Variant Detection**: Identify mutations and genetic variations in sequences
+- **Performance Metrics**: Track analysis performance with detailed statistics
+- **Data Visualization**: Interactive visualizations for genomic data exploration
+- **Quality Reports**: Generate detailed quality assessment reports for sequencing data
+- **Sequence Comparison**: Compare multiple genomic sequences to identify similarities and differences
+- **Database Integration**: Connect to sequence databases for reference data
+- **Real-time Processing**: Monitor analysis progress in real-time
 
-There are several ways of editing your application.
+## 🚀 Getting Started
 
-**Use Lovable**
+### Prerequisites
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/49b90b6d-33cf-4a7d-876c-15ab3e20fce7) and start prompting.
+- Node.js (v16 or later)
+- npm (v7 or later) or Yarn
+- Git
 
-Changes made via Lovable will be committed automatically to this repo.
+### Installation
 
-**Use your preferred IDE**
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/Adams-404/genome-insight-hub.git
+   cd genome-insight-hub
+   ```
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+2. Install dependencies:
+   ```bash
+   npm install
+   # or
+   yarn
+   ```
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+3. Start the development server:
+   ```bash
+   npm run dev
+   # or
+   yarn dev
+   ```
 
-Follow these steps:
+4. Open [http://localhost:5173](http://localhost:5173) in your browser to see the application.
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+## 🛠️ Built With
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+- [Vite](https://vitejs.dev/) - Next Generation Frontend Tooling
+- [React](https://reactjs.org/) - A JavaScript library for building user interfaces
+- [TypeScript](https://www.typescriptlang.org/) - TypeScript is a typed superset of JavaScript
+- [shadcn/ui](https://ui.shadcn.com/) - Beautifully designed components
+- [Tailwind CSS](https://tailwindcss.com/) - A utility-first CSS framework
+- [Lucide Icons](https://lucide.dev/) - Beautiful & consistent icon toolkit
 
-# Step 3: Install the necessary dependencies.
-npm i
+## 📊 Dashboard Overview
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
+The application features a comprehensive dashboard that provides:
 
-**Edit a file directly in GitHub**
+- Real-time analysis statistics
+- Recent activity tracking
+- Quick access to common actions
+- Performance metrics and trends
+- System status monitoring
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+## 📄 License
 
-**Use GitHub Codespaces**
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+## 🙏 Acknowledgments
 
-## What technologies are used for this project?
-
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/49b90b6d-33cf-4a7d-876c-15ab3e20fce7) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+- Built with ❤️ by [Your Name]
+- Special thanks to all contributors and open-source projects that made this possible
