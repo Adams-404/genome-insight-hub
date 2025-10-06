@@ -67,8 +67,3 @@ The application features a comprehensive dashboard that provides:
 ## 📄 License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## 🙏 Acknowledgments
-
-- Built with ❤️ by [Your Name]
-- Special thanks to all contributors and open-source projects that made this possible
