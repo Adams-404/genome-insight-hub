@@ -157,7 +157,7 @@ export const Dashboard = () => {
         <CardContent className="p-6">
           <div className="flex items-center justify-between">
             <div>
-              <h2 className="text-2xl font-bold text-foreground mb-2">Good morning, Dr. Chen</h2>
+              <h2 className="text-2xl font-bold text-foreground mb-2">Good morning, Dr. Adam</h2>
               <p className="text-muted-foreground">You have 3 analyses in progress and 12 completed today.</p>
             </div>
             <Button className="bg-primary hover:bg-primary-hover shadow-button">

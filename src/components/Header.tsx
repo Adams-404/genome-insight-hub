@@ -65,7 +65,7 @@ export const Header = ({ isCollapsed = false }: HeaderProps) => {
               </Button>
             </DropdownMenuTrigger>
             <DropdownMenuContent align="end" className="w-56">
-              <DropdownMenuLabel>Dr. Sarah Chen</DropdownMenuLabel>
+              <DropdownMenuLabel>Dr. Adam</DropdownMenuLabel>
               <DropdownMenuSeparator />
               <DropdownMenuItem>
                 <User className="mr-2 h-4 w-4" />
